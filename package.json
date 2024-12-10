@@ -1,0 +1,28 @@
+{
+  "name": "@tsx-use/state-with-history",
+  "version": "0.1.0",
+  "description": "Takes an `initialState: T` and produces an object that has properties `initial`, `previous`, & `current`, as well as methods `set` (current), `revert` (to previous), & `reset` (to initial).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsx-use/state-with-history.git"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "hook",
+    "hooks",
+    "state",
+    "history",
+    "previous"
+  ],
+  "author": "Xs-and-10s",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tsx-use/state-with-history/issues"
+  },
+  "homepage": "https://github.com/tsx-use/state-with-history#readme"
+}
