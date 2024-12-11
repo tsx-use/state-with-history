@@ -1,0 +1,5 @@
+{
+  "name": "@tsx-use/state-with-history",
+  "version": "0.1.0",
+  "exports": "./src/index.ts"
+}
