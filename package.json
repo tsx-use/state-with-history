@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/tsx-use/state-with-history/issues"
   },
-  "homepage": "https://github.com/tsx-use/state-with-history#readme"
+  "homepage": "https://github.com/tsx-use/state-with-history#readme",
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
 }
