@@ -37,12 +37,11 @@ export function useStateWithHistory<T>(initialState: T): {
   const revertState = () => {
     if (history.length === 0) {
       setPreviousState(() => undefined);
-      setCurrentState(() => previousState);
     } else {
       const last = history.pop();
       setPreviousState(() => last);
-      setCurrentState(() => initialState);
     }
+    setCurrentState(() => initialState);
   };
 
   const resetState = () => {
