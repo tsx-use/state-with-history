@@ -2,11 +2,11 @@ import { /* useEffect, */ useState } from "react";
 
 export function useStateWithHistory<T>(initialState: T): {
   current: T;
-  previous: T | undefined;
   initial: T;
-  set: (state: T) => void;
-  revert: () => void;
+  previous: T | undefined;
   reset: () => void;
+  revert: () => void;
+  set: (state: T) => void;
 } {
   const history: T[] = [];
   const [currentState, setCurrentState] = useState<T>(() => initialState);
