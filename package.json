@@ -4,7 +4,7 @@
   "description": "Takes an `initialState: T` and produces an object that has properties `initial`, `previous`, & `current`, as well as methods `set` (current), `revert` (to previous), & `reset` (to initial).",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest"
   },
   "repository": {
     "type": "git",
