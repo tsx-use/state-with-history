@@ -1,9 +1,18 @@
 import { /* useEffect, */ useState } from "react";
 
-export function useStatesTimeline<T>(initialState: T) {
+export function useStateWithHistory<T>(initialState: T): {
+  current: T;
+  previous: T | undefined;
+  initial: T;
+  set: (state: T) => void;
+  revert: () => void;
+  reset: () => void;
+} {
   const history: T[] = [];
   const [currentState, setCurrentState] = useState<T>(() => initialState);
-  const [previousState, setPreviousState] = useState<T>(() => undefined);
+  const [previousState, setPreviousState] = useState<T | undefined>(
+    () => undefined,
+  );
 
   // // ? though useEffect is run on every render,
   // // ? the cleanup function returned is not:
